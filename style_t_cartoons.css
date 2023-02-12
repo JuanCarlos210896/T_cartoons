@@ -1,0 +1,468 @@
+/*Esta parte le da 
+el fondo negro a la página*/
+body{
+	background-color: #000000;
+}
+
+
+/*Esta parte le da formato al texto de inicio del Index.html y le da formato al título de cada página*/
+.titulo,.slogan{
+	font-size: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/*Esta parte le da formato al banner*/
+.banner{
+	display: grid;
+	grid-template-columns: .2fr 1fr .2fr;
+	grid-template-rows: .05fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	/*display: grid;
+	list-style: none;
+	margin: auto;*/
+}
+/*Esta parte le da formato a los botones de iniciar sesión, carrito, favoritos*/
+.botones_derecha,.iniciar_sesion,.carrito,.favoritos,btn-dark{
+	text-align: right;
+	background-color:  	#000000;
+	color: #FFFFFF;
+	text-decoration: none;
+	grid-column-start: 3;
+	display: flex;
+ justify-content: center;
+  align-items: center;
+}
+.bi:hover{
+		font-size: 220%;
+		color: #FF8000;
+}
+.logo{
+		text-align: center;
+		grid-column-start: 1;
+}
+/*Tamaño y margen de botones derecha*/
+.bi{
+	font-size: 200%;
+	margin-left: 0.5px;
+}
+/*Esta parte le da formato al boton de comprar y tambien b11 b12 b13 que estan más abajo*/
+.bi-handbag{
+	border-radius:.5em;
+	color: #FFFFFF;
+}
+.bi-handbag:hover{
+	font-size: 200%;
+	border-radius:.5em;
+	color: #FFFFFF;
+}
+/*Esta parte le da formato a las imagenes del index*/
+.contenido_index{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.nuevos,.favorito,.El_Favorito,.Los_más_nuevos{
+	font-size: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+  display: block;
+  margin: auto;
+}
+/*Esta parte le da formato al menú naranja*/
+.col{
+	margin-block-end: 50px;
+	font-size: 30px;
+	text-align: center;
+	color: #000000;
+}
+.col:hover{
+		color: #FFFFFF;
+		font-weight: bold;
+}
+/*.container, .text-center{
+	 font-size: 15px;
+	 background-color: #FF8000;
+	 width: 100%;
+	 margin-left: 0px;
+	 margin-right: 0px;
+}*/
+
+/*.row-cols-6{
+	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
+}*/
+/*.favorito{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}*/
+
+.col{
+	background-color: #FF8000;
+	  text-decoration: none;
+}
+/*Esta parte le da formato a los botones de las tallas*/
+.btn-circle {
+	margin: 1%;
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+    background-color:  	#FFFFFF;
+}
+.btn-circle:hover{
+		cursor:pointer;
+    background-color:#FF8800;
+    box-shadow: 0 0 0 3px lightcoral;
+}
+.btn-circle:focus{
+		cursor:pointer;
+    background-color:#FF8800;
+    box-shadow: 0 0 0 3px lightcoral;
+
+}
+
+.imagenes_anime1{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr repeat(4, .1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+/*Alinea verticalmente*/
+align-items: center;
+}
+.boo,.Majin_boo,.tallas11,.precio11,.b11{
+	grid-column-start: 1;
+}
+.blue,.goku_blue,.tallas12,.precio12,.b12{
+	grid-column-start: 2;
+}
+.k_negra,.kaiosama_negra,.tallas13,.precio13,.b13{
+	grid-column-start: 3;
+}
+.boo,.blue,.k_negra{
+		grid-row-start: 1;
+}
+.Majin_boo,.goku_blue,.kaiosama_negra{
+			grid-row-start: 2;
+			color:#FFFFFF;
+}
+.tallas11,.tallas12,.tallas13{
+			grid-row-start: 3;	
+}
+.precio11,.precio12,.precio13{
+			grid-row-start: 4;
+			color:#FFFFFF;
+}
+.b11,.b12,.b13{
+			grid-row-start: 5;
+			width: 50%;
+			text-decoration:none;
+			font-weight: 800;
+			font-size: 20px;
+			padding-top:10px;
+			padding-bottom:10px;
+			padding-left:40px;
+			padding-right:40px;
+			background-color:#FF8000;
+			border-color: #FFFFFF;
+			border-width: 3px;
+			border-style: solid;
+			border-radius:35px;
+}
+/*Esta parte cambia el color del boton cuando el cursor pasa  por encima*/
+.b11:hover{
+		cursor:pointer;
+    background-color:#FF6000;
+}
+.b12:hover{
+		cursor:pointer;
+    background-color:#FF6000;
+}
+.b13:hover{
+		cursor:pointer;
+    background-color:#FF6000;
+}
+/*Esta parte cambia el color del boton cuando se da click*/
+.b11:active{
+		cursor:pointer;
+    background-color:#000000;
+}
+.b12:active{
+		cursor:pointer;
+    background-color:#000000;
+}
+.b13:active{
+		cursor:pointer;
+    background-color:#000000;
+}
+
+/*La parte de arriba es lo mismo que abajo pero está mas optimizado por menos líneas de código*/
+/*
+.boo{
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+.Majin_boo{
+		grid-column-start: 1;
+	grid-row-start: 2;
+	color: #FFFFFF
+}
+.tallas11{
+			grid-column-start: 1;
+	grid-row-start: 3;
+}
+.precio11{
+	grid-column-start: 1;
+	grid-row-start: 4;
+	color: #FFFFFF
+}
+.b11{
+				grid-column-start: 1;
+	grid-row-start: 5;
+}
+.blue{
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+.goku_blue {
+		grid-column-start: 2;
+	grid-row-start: 2;
+	color: #FFFFFF
+}
+.tallas12{
+	grid-column-start: 2;
+	grid-row-start: 3;
+}
+.precio12{
+	grid-column-start: 2;
+	grid-row-start: 4;
+	color: #FFFFFF
+}
+.b12{
+	grid-column-start: 2;
+	grid-row-start: 5;
+}
+
+.k_negra{
+	grid-column-start: 3;
+	grid-row-start: 1;
+}
+.kaiosama_negra{
+		grid-column-start: 3;
+	grid-row-start: 2;
+	color: #FFFFFF
+}
+.tallas13{
+			grid-column-start: 3;
+	grid-row-start: 3;
+}
+.precio13{
+				grid-column-start: 3;
+	grid-row-start: 4;
+	color: #FFFFFF
+}
+.b13{
+				grid-column-start: 3;
+	grid-row-start: 5;
+}*/
+.imagenes_anime2{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr repeat(4, .1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+/*Alinea verticalmente*/
+align-items: center;
+}
+.karin,.Maestro_karin,.tallas11,.precio11,.b11{
+	grid-column-start: 1;
+}
+.roshi_negra,.maestro_roshi_negra,.tallas12,.precio12,.b12{
+	grid-column-start: 2;
+}
+.k_blanca,.kaiosama_blanca,.tallas13,.precio13,.b13{
+	grid-column-start: 3;
+}
+.karin,.roshi_negra,.k_blanca{
+		grid-row-start: 1;
+}
+.Maestro_karin,.maestro_roshi_negra,.kaiosama_blanca{
+			grid-row-start: 2;
+			color:#FFFFFF;
+}
+.tallas11,.tallas12,.tallas13{
+			grid-row-start: 3;	
+}
+.precio11,.precio12,.precio13{
+			grid-row-start: 4;
+			color:#FFFFFF;
+}
+.b11,.b12,.b13{
+			grid-row-start: 5;	
+}
+.imagenes_anime3{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr repeat(4, .1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+/*Alinea verticalmente*/
+align-items: center;
+}
+.roshi_blanca,.maestro_roshi_blanca,.tallas11,.precio11,.b11{
+	grid-column-start: 1;
+}
+.roshi_blanca{
+		grid-row-start: 1;
+}
+.maestro_roshi_blanca{
+			grid-row-start: 2;
+			color:#FFFFFF;
+}
+.tallas11{
+			grid-row-start: 3;	
+}
+.precio11{
+			grid-row-start: 4;
+			color:#FFFFFF;
+}
+.b11{
+			grid-row-start: 5;	
+}
+/*Esta parte le da formato al formulario de inicio de sesión*/
+.inicio_sesion{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(6, .5fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.input1,.input2,.iniciar_sesion_f{
+			grid-column-start: 2;
+			border-radius:1em;
+			color: #FFFFFF;
+			font-weight: bold;
+			font-weight: 800;
+			font-size: 20px;
+			padding-top:10px;
+			padding-bottom:10px;
+			padding-left:40px;
+			padding-right:40px;
+			background-color:#000000;
+			border-color: #FFFFFF;
+			border-width: 3px;
+			border-style: solid;
+			border-radius:35px;
+}
+.input1{
+	grid-row-start: 1;
+}
+.input2{
+	grid-row-start: 3;
+}
+.iniciar_sesion_f{
+	grid-row-start: 6;
+	background-color:#FF8000;
+	border-color: #FFFFFF;
+}
+.iniciar_sesion_f:hover{
+  background-color:#FF6000;
+}.iniciar_sesion_f:active{
+  background-color:#000000;
+}
+.olvido{
+		color: #FFFFFF;
+  	grid-row-start: 7;
+  	grid-column-start: 2;
+  	justify-content: left;
+}.olvido:hover{color: #FF8000}
+/*Esta parte le da formato al formulario de registro*/
+.registrarse{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(18, .5fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.input3,.input4,.input5,.input6,.input7,.unete{
+			grid-column-start: 2;
+			border-radius:1em;
+			color: #FFFFFF;
+			font-weight: bold;
+			font-weight: 800;
+			font-size: 20px;
+			padding-top:10px;
+			padding-bottom:10px;
+			padding-left:40px;
+			padding-right:40px;
+			background-color:#000000;
+			border-color: #FFFFFF;
+			border-width: 3px;
+			border-style: solid;
+			border-radius:35px;
+}
+.input1{
+	grid-row-start: 1;
+}
+.input2{
+	grid-row-start: 3;
+}
+.input3{
+	grid-row-start: 5;
+}
+.input4{
+	grid-row-start: 7;
+}
+.input5{
+	grid-row-start: 9;
+}
+.input6{
+	grid-row-start:11;
+}
+.input7{
+	grid-row-start: 13;
+}
+.unete{
+	grid-row-start: 15;
+	background-color:#FF8000;
+	border-color: #FFFFFF;
+}
+.unete:hover{
+  background-color:#FF6000;
+}.unete:active{
+  background-color:#000000;
+}
+/*Esta parte le da formato al boton de pagar y al carrito.html*/
+.pagar{
+	color: #FF8000;
+}
+/*-----------------------------------esta parte cambia el menú superior*//*
+.row-cols-6{
+	position: fixed;
+	width: 100%;
+}
+.row-cols-6{
+	color:white;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.row-cols-6{
+	background: black;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+} */
