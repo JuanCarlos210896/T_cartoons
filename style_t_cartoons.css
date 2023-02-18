@@ -132,7 +132,7 @@ grid-row-gap: 0px;
 
 }
 
-.imagenes_anime1{
+.imagenes_anime1,.imagenes_clasicas1{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: 1fr repeat(4, .1fr);
@@ -276,7 +276,7 @@ align-items: center;
 				grid-column-start: 3;
 	grid-row-start: 5;
 }*/
-.imagenes_anime2{
+.imagenes_anime2, .imagenes_clasicas2{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: 1fr repeat(4, .1fr);
